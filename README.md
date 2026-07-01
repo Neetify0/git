@@ -17,18 +17,18 @@ Implement a project connected to GitHub.
 `git clone <url>` - download an existing repository instead of `git init`.
 
 ## 2: Setup for `git init`
-Setting up an initialized local GitHub repository
+Setting up an initialized local GitHub repository.
 
 `git branch -M main` - rename current branch (master) to main, which is the default for GitHub.
 
 `git remote add origin <url>` - link the local repository to a remote repository.
 
-## 3: Staging/committing
+## 3: Staging and committing
 Reviewing and pushing changes to GitHub.
 
-`git fetch` - downloads data but does not merge.
+`git fetch` - download data without merging.
 
-`git pull` - fetches and merges data.
+`git pull` - fetch and merge data.
 
 `git status` - list all files modified (untracked, modified, and staged).
 
@@ -40,13 +40,13 @@ Reviewing and pushing changes to GitHub.
 
 `git reset <file>` - unstage file/s.
 
-`git reset --soft HEAD~1` - undo last commit and keep its changes staged
+`git reset --soft HEAD~1` - undo last commit and keep its changes staged.
 
-`git reset --hard HEAD~1` - delete last commit and its changes from **LOCAL** version history
+`git reset --hard HEAD~1` - delete last commit and its changes from **LOCAL** version history.
 
 `git commit -m "<message>" -m "<description>"` - put staged file(s) in local version history (description optional).
 
-`git commit --amend -m "<message>" -m "<description>"` - modify most recent commit (**NEVER** amend pushed commits) 
+`git commit --amend -m "<message>" -m "<description>"` - modify most recent commit (**NEVER** amend pushed commits).
 
 `git push -u origin <branch-name>` (main is usually the default) - push changes to GitHub repository for the very first time (see section 4 for information on branching).
 
@@ -65,14 +65,14 @@ Creating alternate version histories.
 
 `git branch --delete <branch-name>` - delete a specified branch.
 
-`git push origin --delete <branch-name>` - delete branch on remote repository
+`git push origin --delete <branch-name>` - delete branch on remote repository.
 
-## 5: Stash changes
+## 5: Stashing changes
 `git stash` - put away changes temporarily so you can freely switch branches without committing work.
 
 `git stash list` - list stashed sets.
 
-`git stash pop` - return stashed changes.
+`git stash pop` - return and remove stashed changes.
 
 ## 6: Version history
 `git log` - check commit history with an associated id (SHA).
