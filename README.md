@@ -28,6 +28,8 @@ Reviewing and pushing changes to GitHub.
 
 `git pull` - pull changes from GitHub repository
 
+`git fetch` - fetches ALL data from GitHub repository
+
 `git status` - list all files modified
 
 `git diff` - shows exact line-by-line modifications
@@ -40,9 +42,9 @@ Reviewing and pushing changes to GitHub.
 
 `git commit -m "<message>" -m "<description>"` - puts staged file/s in local version history (description optional)
 
-`git push` - pushes changes to GitHub repository
+`git push -u origin <branch-name>` - pushes changes to GitHub repository (see further for information on branching)
 
-## 4: Isolating Work
+## 4: Isolating work
 Creating alternate version histories.
 
 `git branch` - list all local branches
@@ -51,7 +53,29 @@ Creating alternate version histories.
 
 `git checkout <branch-name>` - switches to the new branch
 
-`git merge <branch-name>` - combines the specified branch with the <b>active<b> branch
+`git merge <branch-name>` - combines the specified branch with the <b>active</b> branch
 
 `git branch -d <branch-name>` - deletes a specified branch
 
+## 5: Stash changes
+`git stash` - puts away changes temporarily so you can freely switch branches without committing work
+
+`git stash list` - lists stashed sets
+
+`git stash pop` - returns stashed changes
+
+## 6: Version history
+`git log` - checks commit history with a associated id (SHA)
+
+`git checkout <commit-SHA>` - moves working directory safely to a commit
+
+`git checkout main` (or current branch) - brings workspace back to present
+
+`git revert <commit-SHA>` - creates commit which reverts back to a specified commit
+
+## 6: Information and resources
+More information can be found at the <a href="https://git-scm.com/cheat-sheet">documentation</a> or online.
+
+Additional resources:
+- https://www.youtube.com/watch?v=HkdAHXoRtos
+- https://www.youtube.com/watch?v=MJUJ4wbFm_A
