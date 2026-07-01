@@ -42,7 +42,9 @@ Reviewing and pushing changes to GitHub.
 
 `git commit -m "<message>" -m "<description>"` - puts staged file/s in local version history (description optional)
 
-`git push -u origin <branch-name>` - pushes changes to GitHub repository (see further for information on branching)
+`git push -u origin <branch-name>` (main is usually the default) - pushes changes to GitHub repository for the very first time (see further for information on branching)
+
+`git puish` - pushes changes to GitHub repository
 
 ## 4: Isolating work
 Creating alternate version histories.
@@ -53,7 +55,7 @@ Creating alternate version histories.
 
 `git checkout <branch-name>` - switches to the new branch
 
-`git merge <branch-name>` - combines the specified branch with the <b>active</b> branch
+`git merge <branch-name>` - combines the specified branch with the <b>ACTIVE</b> branch
 
 `git branch -d <branch-name>` - deletes a specified branch
 
