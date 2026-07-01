@@ -10,7 +10,7 @@ Implement a project connected to GitHub.
 
 `git config --global user.name <name>` - set username for commits.
 
-`git config --global user.email <email>` - set email (or GitHub private noreply email) for commit.
+`git config --global user.email <email>` - set email (or GitHub private noreply email) for commits.
 
 `git init` - initialize a local Git repository in a directory/folder.
 
@@ -30,7 +30,7 @@ Reviewing and pushing changes to GitHub.
 
 `git pull` - fetch and merge data.
 
-`git status` - list all files modified (untracked, modified, and staged).
+`git status` - list all modified files (untracked, modified, and staged).
 
 `git diff` - show exact line-by-line modifications.
 
@@ -44,7 +44,7 @@ Reviewing and pushing changes to GitHub.
 
 `git reset --hard HEAD~1` - delete last commit and its changes from **LOCAL** version history.
 
-`git commit -m "<message>" -m "<description>"` - put staged file(s) in local version history (description optional).
+`git commit -m "<message>" -m "<description>"` - save staged file(s) to local version history (description optional).
 
 `git commit --amend -m "<message>" -m "<description>"` - modify most recent commit (**NEVER** amend pushed commits).
 
@@ -81,7 +81,7 @@ Creating alternate version histories.
 
 `git checkout main` (or current branch) - bring workspace back to present.
 
-`git revert <commit-SHA>` - create commit which undoes the specific changes of that specific commit, without wiping any work after it.
+`git revert <commit-SHA>` - create a commit which undoes the specific changes of that specific commit, without wiping any work after it.
 
 ## 7: Information and resources
 More information can be found at the [documentation](https://git-scm.com/cheat-sheet) or online.
