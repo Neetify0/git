@@ -3,7 +3,7 @@ simple git version control through CLI (terminal).
 
 \* requires https://git-scm.com/install
 
-\* requires GitHub
+\* requires GitHub (other Git hosting software can be used but this documentation was created for GitHub)
 
 ## 1: Setup
 Implement a project connected to GitHub.
@@ -26,11 +26,11 @@ Setting up an initialized local GitHub repository
 ## 3: Staging/committing
 Reviewing and pushing changes to GitHub.
 
-`git pull` - pull changes from GitHub repository.
+`git fetch` - downloads data but does not merge.
 
-`git fetch` - fetch ALL data from GitHub repository.
+`git pull` - fetches and merges data.
 
-`git status` - list all files modified.
+`git status` - list all files modified (untracked, modified, and staged).
 
 `git diff` - show exact line-by-line modifications.
 
