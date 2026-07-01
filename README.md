@@ -10,7 +10,7 @@ Implement a project connected to GitHub.
 
 `git config --global user.name <name>` - set username for commits.
 
-`git config --global user.email <email>` - set email (or GitHub private noreply email) for commit at ".patch".
+`git config --global user.email <email>` - set email (or GitHub private noreply email) for commit.
 
 `git init` - initialize a local Git repository in a directory/folder.
 
@@ -34,21 +34,21 @@ Reviewing and pushing changes to GitHub.
 
 `git diff` - show exact line-by-line modifications.
 
-`git add <file>` - stage modified file (all files if `git add .` or subdirectory if `git add /path/`) for commit.
+`git add <file>` - stage modified file (all files if `git add .` or subdirectory if `git add ./path/`/`git add path/`) for commit.
 
 `git diff --staged` - show the difference between staged files and last commit.
 
 `git reset <file>` - unstage file/s.
 
-`git reset --hard` - undo last commit and keep its changes staged
+`git reset --soft HEAD~1` - undo last commit and keep its changes staged
 
-`git reset --hard` - delete last commit and its changes from **LOCAL** version history
+`git reset --hard HEAD~1` - delete last commit and its changes from **LOCAL** version history
 
 `git commit -m "<message>" -m "<description>"` - put staged file(s) in local version history (description optional).
 
 `git commit --amend -m "<message>" -m "<description>"` - modify most recent commit (**NEVER** amend pushed commits) 
 
-`git push -u origin <branch-name>` (main is usually the default) - push changes to GitHub repository for the very first time (see further for information on branching).
+`git push -u origin <branch-name>` (main is usually the default) - push changes to GitHub repository for the very first time (see section 4 for information on branching).
 
 `git push` - push changes to GitHub repository.
 
@@ -61,11 +61,11 @@ Creating alternate version histories.
 
 `git checkout <branch-name>` - switch to the new branch.
 
-`git merge <branch-name>` - combine the specified branch with the **ACTIVE** branch.
+`git merge <branch-name>` - merge changes from the specified branch into your **ACTIVE** branch.
 
-`git branch -d <branch-name>` - delete a specified branch.
+`git branch --delete <branch-name>` - delete a specified branch.
 
-`git push origin --d <branch-name>` - delete branch on remote repository
+`git push origin --delete <branch-name>` - delete branch on remote repository
 
 ## 5: Stash changes
 `git stash` - put away changes temporarily so you can freely switch branches without committing work.
@@ -81,7 +81,7 @@ Creating alternate version histories.
 
 `git checkout main` (or current branch) - bring workspace back to present.
 
-`git revert <commit-SHA>` - create commit which reverts to a specified commit.
+`git revert <commit-SHA>` - create commit which undoes the specific changes of that specific commit, without wiping any work after it.
 
 ## 7: Information and resources
 More information can be found at the [documentation](https://git-scm.com/cheat-sheet) or online.
