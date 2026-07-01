@@ -44,7 +44,7 @@ Reviewing and pushing changes to GitHub.
 
 `git push -u origin <branch-name>` (main is usually the default) - pushes changes to GitHub repository for the very first time (see further for information on branching)
 
-`git puish` - pushes changes to GitHub repository
+`git push` - pushes changes to GitHub repository
 
 ## 4: Isolating work
 Creating alternate version histories.
