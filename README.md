@@ -38,6 +38,20 @@ Reviewing and pushing changes to GitHub.
 
 `git reset <file>` - unstages file/s
 
-`git commit -m "<message>" -m "<description>"` - puts staged file/s in local version history
+`git commit -m "<message>" -m "<description>"` - puts staged file/s in local version history (description optional)
 
 `git push` - pushes changes to GitHub repository
+
+## 4: Isolating Work
+Creating alternate version histories.
+
+`git branch` - list all local branches
+
+`git branch <branch-name>` - creates a new branch without switching to it
+
+`git checkout <branch-name>` - switches to the new branch
+
+`git merge <branch-name>` - combines the specified branch with the <b>active<b> branch
+
+`git branch -d <branch-name>` - deletes a specified branch
+
