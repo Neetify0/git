@@ -38,45 +38,53 @@ Reviewing and pushing changes to GitHub.
 
 `git diff --staged` - show the difference between staged files and last commit.
 
-`git reset <file>` - unstages file/s.
+`git reset <file>` - unstage file/s.
+
+`git reset --hard` - undo last commit and keep its changes staged
+
+`git reset --hard` - delete last commit and its changes from **LOCAL** version history
 
 `git commit -m "<message>" -m "<description>"` - put staged file(s) in local version history (description optional).
 
-`git push -u origin <branch-name>` (main is usually the default) - pushes changes to GitHub repository for the very first time (see further for information on branching).
+`git commit --amend -m "<message>" -m "<description>"` - modify most recent commit (**NEVER** amend pushed commits) 
 
-`git push` - pushes changes to GitHub repository.
+`git push -u origin <branch-name>` (main is usually the default) - push changes to GitHub repository for the very first time (see further for information on branching).
+
+`git push` - push changes to GitHub repository.
 
 ## 4: Isolating work
 Creating alternate version histories.
 
 `git branch` - list all local branches.
 
-`git branch <branch-name>` - creates a new branch without switching to it.
+`git branch <branch-name>` - create a new branch without switching to it.
 
-`git checkout <branch-name>` - switches to the new branch.
+`git checkout <branch-name>` - switch to the new branch.
 
-`git merge <branch-name>` - combines the specified branch with the <b>ACTIVE</b> branch.
+`git merge <branch-name>` - combine the specified branch with the **ACTIVE** branch.
 
-`git branch -d <branch-name>` - deletes a specified branch.
+`git branch -d <branch-name>` - delete a specified branch.
+
+`git push origin --d <branch-name>` - delete branch on remote repository
 
 ## 5: Stash changes
 `git stash` - put away changes temporarily so you can freely switch branches without committing work.
 
-`git stash list` - lists stashed sets.
+`git stash list` - list stashed sets.
 
-`git stash pop` - returns stashed changes.
+`git stash pop` - return stashed changes.
 
 ## 6: Version history
-`git log` - checks commit history with an associated id (SHA).
+`git log` - check commit history with an associated id (SHA).
 
-`git checkout <commit-SHA>` - moves working directory safely to a commit.
+`git checkout <commit-SHA>` - move working directory safely to a commit.
 
-`git checkout main` (or current branch) - brings workspace back to present.
+`git checkout main` (or current branch) - bring workspace back to present.
 
-`git revert <commit-SHA>` - creates commit which reverts to a specified commit.
+`git revert <commit-SHA>` - create commit which reverts to a specified commit.
 
 ## 7: Information and resources
-More information can be found at the [documentation](https://git-scm.com/cheat-sheet") or online.
+More information can be found at the [documentation](https://git-scm.com/cheat-sheet) or online.
 
 Additional resources:
 - https://www.youtube.com/watch?v=HkdAHXoRtos
