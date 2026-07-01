@@ -1,46 +1,20 @@
 # git
-simple git version control
+simple git version control through CLI (terminal).
+
+\* requires https://git-scm.com/install
+
+\* requires GitHub
 
 ## 1: Setup
-Implement a project connected to GitHub
+Implement a project connected to GitHub.
 
-```
-# set to your github username for consistency
-git config --global user.name "placeholder"
+`git config --global user.name <name>` - set username for commits.
 
-# set your email (or GitHub noreply email)
-git config --global user.email "123456789+username@users.noreply@githu.com"
-```
+`git config --global user.email <email>` - set email (or GitHub private noreply email) for commit at ".patch".
 
-## git repo
-Create a repository on GitHub
+`git init` - initialize a local Git repository in a directory/folder.
 
-```
-# initalize git in a folder through the terminal
-git init
-```
+`git remote add origin <url>` - link the local repository to a new repository on GitHub.
 
-Stage all files for next commit
-```
-git add .
-```
+`git clone <url>` - download a existing repository instead of `git init`.
 
-Create commit
-```
-git commit -m "feat: Changed something"
-```
-
-Change the current branch name to "main" rather than master
-```
-git branch -M main
-```
-
-Connect current working directory to Git
-```
-git remote add origin <repo link>
-```
-
-Push commit to main branch
-```
-git push -u origin main
-```
